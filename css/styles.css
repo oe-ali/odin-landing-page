@@ -19,9 +19,16 @@ html, body {
     box-sizing: border-box;
 }
 
-header, ul, #hero-section, #style-container, #signing-section
+header, ul
 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header
+{
+    gap: 45%;
 }
 
 header, #hero-section, footer
@@ -37,31 +44,17 @@ header, footer
     padding-right: 60px;
 }
 
-section #hero-section, section #quote-section, section #info-section
-{
-    height: 300px;
-    padding-left: 150px;
-    padding-right: 60px
-}
-
-section #info-section #style-container
-{
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-}
-
-section #signing-section
-{
-    height: 100px;
-    justify-self: center;
-}
-
 header h2
 {
     font-size: 24px;
+}
+
+ul
+{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    list-style-type: none;
 }
 
 header li, #hero-section p
@@ -82,26 +75,65 @@ button
     font-weight: bolder;
 }
 
-#info-section h2
+section
 {
+    height: 500px;
+}
+
+#hero-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 145px;
+    padding-left: 100px;
+}
+
+#hero-one, #hero-two
+{
+    width: 400px;
+    height: 200px;
+}
+
+#hero-two
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: slategray;
+}
+
+#info-section 
+{
+    text-align: center;
+    padding: 20px;
+}
+
+#info-section #style-container
+{
+    width: max-content;
+    display: flex;
     justify-self: center;
+    margin-top: 50px;
 }
 
-#info-section div
+#info-section #content-box
 {
-    flex: 0.5;
+    width: 200px;
+    height: 250px;
 }
 
-#info-section div img
+#info-section #content-box img
 {
     width: 150px;
     height: 150px;
-    border: 1px solid red;
-} 
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+}
 
 #quote-section
 {
-    background-color: #e5e7eb;
+    background: #e5e7eb;
     padding: 10%;
 }
 
@@ -125,22 +157,39 @@ button
 
 #signing-section
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signing-box
+{
+    width: 850px;
+    height: 250px;
+    display: flex;
+    gap: 120px;
+    align-items: center;
+    justify-content: center;
     background-color: #3882f6;
     color: #f9faf8;
     border-radius: 10px;
-    justify-content: center;
-    padding-top: 150px;
-    margin: 120px;   
+    padding: 0;
+}
+
+#signing-section #action-div, #signing-section #button-div
+{
+    height: 100px;
 }
 
 #signing-section button
 {
     border: 1px solid #f9faf8;
     margin-top: 25%;
-    position: relative;
 }
 
-footer p
+footer
 {
-    justify-self: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
